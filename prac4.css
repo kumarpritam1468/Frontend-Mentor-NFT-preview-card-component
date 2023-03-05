@@ -1,0 +1,147 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    width: 350px;
+    height: 620px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.08);
+}
+
+main #img1 {
+    width: 300px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#image{
+    position: relative;
+    width: 300px;
+}
+
+main #overlay #eye{
+    width: 60px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsla(178, 100%, 50%, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#image:hover #overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#price,
+#artist,
+#line,
+h1,
+#p1 {
+    margin: 0px 30px 0px 30px;
+}
+
+main h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 25px;
+    transition: all;
+    transition-duration: .5s;
+}
+
+main h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+main #p1 {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: 25px;
+}
+
+main #price {
+    display: flex;
+}
+
+main #price #p2 {
+    color: hsl(178, 100%, 50%);
+    padding: 0px 90px 0px 10px;
+}
+
+main #price #p3 {
+    padding-left: 10px;
+}
+
+main #price img {
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+main #price #p3 {
+    color: hsl(215, 51%, 70%);
+}
+
+main #line {
+    height: .2vh;
+    background-color: hsl(215, 32%, 27%);
+}
+
+main #artist {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+main #artist #p4 {
+    color: hsl(215, 51%, 70%);
+    padding: 0px 10px 0px 20px;
+}
+
+main #artist #p5 {
+    color: white;
+}
+
+main #artist #p5:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+    transition: all;
+    transition-duration: .5s;
+}
+
+main #artist #img4 {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
